@@ -14,7 +14,6 @@
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 }
 
-/* Движение всего поста при наведении на контейнер */
 .x-post-embed:hover {
   background: white;
   transform: translateY(-6px);
