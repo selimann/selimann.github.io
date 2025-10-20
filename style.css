@@ -35,7 +35,6 @@
   height: 48px;
   border-radius: 50%;
   flex-shrink: 0;
-  /* Убрана анимация аватара */
 }
 
 .x-post-user-info {
@@ -69,7 +68,6 @@
   width: 18px;
   height: 18px;
   flex-shrink: 0;
-  /* Убрана анимация галочки */
 }
 
 .x-post-handle {
@@ -208,10 +206,8 @@
 .x-post-link svg {
   width: 16px;
   height: 16px;
-  /* Убрана анимация иконки ссылки */
 }
 
-/* Убраны все дополнительные анимации */
 .x-post-embed::before {
   display: none;
 }
@@ -254,7 +250,6 @@
   font-style: normal;
 }
 
-/* === SYSTEM85 MONO BOLD === */
 @font-face {
   font-family: "System85MonoBoldPro";
   src: url("fonts/system85-mono-bold-pro.otf") format("opentype");
@@ -262,7 +257,6 @@
   font-style: normal;
 }
 
-/* === ROOT VARIABLES === */
 :root {
   --font-logo: "NeueMachina", sans-serif;
   --font-sans: "System85MonoBoldPro", monospace;
@@ -278,7 +272,6 @@
   --transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
-/* === GLOBAL RESET === */
 * {
   margin: 0;
   padding: 0;
@@ -293,7 +286,6 @@ body {
   overflow-x: hidden;
 }
 
-/* === BASIC ELEMENTS === */
 h1,
 h2,
 h3 {
@@ -330,14 +322,12 @@ h2 {
   font-weight: 600;
 }
 
-/* === CONTAINER === */
 .container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 30px;
 }
 
-/* === HEADER === */
 .navbar {
   margin: 40px auto;
   background: white;
@@ -389,7 +379,6 @@ h2 {
   width: 80%;
 }
 
-/* === SECTIONS === */
 section {
   margin: 70px auto;
   background: white;
@@ -419,7 +408,6 @@ section:nth-child(4) {
   animation-delay: 0.3s;
 }
 
-/* === ABOUT === */
 .about {
   text-align: center;
 }
@@ -463,7 +451,6 @@ section:nth-child(4) {
   object-fit: cover;
 }
 
-/* === PROJECTS === */
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -494,7 +481,6 @@ section:nth-child(4) {
   margin-bottom: 20px;
 }
 
-/* Кнопка VIEW */
 .project-card .view-btn {
   border: 2px solid black;
   display: inline-block;
@@ -522,7 +508,6 @@ section:nth-child(4) {
   transform: translateY(-3px);
 }
 
-/* === CONTACT === */
 .contact {
   text-align: center;
   padding: 70px 60px;
@@ -542,7 +527,6 @@ section:nth-child(4) {
   margin-top: 24px;
 }
 
-/* Белые кнопки с hover */
 .contact-links a {
   text-decoration: none;
   color: var(--text);
@@ -563,7 +547,6 @@ section:nth-child(4) {
   transform: translateY(-3px);
 }
 
-/* === FOOTER === */
 .footer {
   text-align: center;
   border-radius: 30px;
@@ -582,7 +565,6 @@ section:nth-child(4) {
   font-size: 1.12rem;
 }
 
-/* === RESPONSIVE === */
 @media (max-width: 768px) {
   section {
     padding: 40px 24px;
@@ -613,5 +595,89 @@ section:nth-child(4) {
   .menu a {
     padding: 6px 10px;
     font-size: 0.85rem;
+  }
+}
+
+.solana-address {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-family: "System85MonoBoldPro";
+  src: url("fonts/system85-mono-bold-pro.otf") format("opentype");
+  font-size: 0.85rem;
+  color: black;
+  padding-top: 90px;
+  padding-left: 30px;
+  flex-wrap: wrap; /* чтобы адаптировать под маленькие экраны */
+}
+
+.solana-icon {
+  width: 32px;
+  height: 32px;
+  opacity: 0.8;
+  flex-shrink: 0;
+}
+
+.label {
+  font-family: "System85MonoBoldPro";
+  font-weight: 900;
+  line-height: 1.2;
+  color: black;
+}
+
+.address {
+  color: rgb(109, 108, 108);
+  display: inline-block;
+  word-break: break-all;
+  font-family: "System85MonoBoldPro";
+  font-weight: 1000;
+  line-height: 1.2;
+  cursor: pointer;
+  transition: color 0.2s ease, transform 0.1s ease;
+}
+
+.address:hover {
+  color: black;
+  transform: scale(1.02);
+}
+
+.address.copied {
+  color: #de4adc; /* flash при копировании */
+  transform: scale(1.05);
+}
+
+.copy-btn {
+  background-color: #000;
+  color: #fff;
+  font-size: 0.75rem;
+  font-weight: 900;
+  border: none;
+  border-radius: 9999px; /* полностью округлая кнопка */
+  padding: 8px 20px; /* увеличенная зона клика */
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.1s ease;
+  flex-shrink: 0;
+  margin-left: 22px;
+  font-family: "NeueMachina";
+  src: url("fonts/NeueMachina-Light.otf") format("opentype");
+}
+
+.copy-btn:hover {
+  background-color: #111;
+  transform: scale(1.05);
+}
+@media (max-width: 480px) {
+  .solana-address {
+    flex-direction: column;
+    align-items: center;
+    padding-left: 0;
+    padding-top: 40px;
+    gap: 12px;
+  }
+
+  .copy-btn {
+    width: auto;
+    text-align: center;
+    margin-left: 0;
   }
 }

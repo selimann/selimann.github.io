@@ -3,22 +3,20 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Elisedd | Full-Stack Developer</title>
+    <title>Full-Stack Developer</title>
     <link rel="stylesheet" href="style.css" />
     <script src="./script.js"></script>
+    <script src="./copy.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Bebas+Neue&family=IBM+Plex+Mono:wght@400;600&display=swap"
       rel="stylesheet"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <style></style>
   </head>
 
   <body>
@@ -38,25 +36,26 @@
       <section class="about" id="about">
         <h1>Full-Stack Developer</h1>
         <p>
-          I build efficient, scalable, and maintainable web applications focused
-          on performance and developer experience.
+          Building web and Web3 applications. Most of my work sits at the
+          intersection of frontend, backend, and blockchain tech.
         </p>
         <p>
-          Skilled in <span class="tech">JavaScript</span>,
-          <span class="tech">TypeScript</span>, <span class="tech">React</span>,
-          and <span class="tech">Node.js</span>, with experience developing
-          modern full-stack architectures and tools.
+          Working mainly with <span class="tech">TypeScript</span>,
+          <span class="tech">React</span>, and
+          <span class="tech">Node.js</span>, focusing on developer experience,
+          scalability, and smooth user flows.
         </p>
         <p>
-          Author of
+          In the Web3 space, I maintain
           <a
             href="https://www.npmjs.com/package/@elisedd/solana-sdk"
             target="_blank"
             rel="noopener"
           >
-            @elisedd/solana-sdk </a
-          >, a lightweight <span class="tech">Solana SDK</span> that streamlines
-          wallet integration and token transactions.
+            @elisedd/solana-sdk
+          </a>
+          — a minimal <span class="tech">Solana SDK</span> that helps developers
+          handle wallets and token transactions with less boilerplate.
         </p>
 
         <div class="twitter-card">
@@ -87,14 +86,13 @@
 
       <!-- CONTACT -->
       <section class="contact" id="contact">
-        <h2>Let’s Build Something Great</h2>
+        <h2>Get in Touch</h2>
         <p>
-          I’m currently open to full-time roles, freelance projects, or
-          open-source collaborations. If you’re building something
-          exciting—let’s talk!
+          If you want to get in touch, offer me a job, coffee, or whatever, feel
+          free to reach out:
         </p>
+
         <div class="contact-links">
-          <!-- <a href="mailto:your_email@example.com">Email Me</a> -->
           <a href="https://github.com/selimann" target="_blank" rel="noopener"
             >GitHub</a
           >
@@ -102,6 +100,25 @@
             >X (Twitter)</a
           >
         </div>
+
+        <p class="solana-address">
+          <img src="./solana.png" alt="Solana Logo" class="solana-icon" />
+          <span class="label">Solana Address:</span>
+          <span
+            class="address"
+            id="solanaAddress"
+            onclick="copySolanaAddress()"
+            title="Click to copy"
+            >EnG5LZ3SAuYSz9CRXMAePQPXnqS3fFUR45GNyVLsZh5W</span
+          >
+          <button
+            class="copy-btn"
+            onclick="copySolanaAddress()"
+            title="Copy address"
+          >
+            COPY
+          </button>
+        </p>
       </section>
     </div>
 
