@@ -552,18 +552,22 @@ section:nth-child(4) {
   padding: 36px;
   background: white;
   border: 2px solid black;
-  margin-top: 30px;
-  font-size: 1rem;
-  color: #555;
-  margin-bottom: 20px;
+  margin: 30px auto 20px auto;
   max-width: 1150px;
-  margin-left: auto;
-  margin-right: auto;
-  font-family: var(--font-sans);
   font-family: var(--font-sans);
   font-size: 1.12rem;
+  color: #555;
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
+.footer p {
+  margin: 0;
+  line-height: 1.2;
+}
 @media (max-width: 768px) {
   section {
     padding: 40px 24px;
