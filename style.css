@@ -608,7 +608,7 @@ section:nth-child(4) {
   color: black;
   padding-top: 90px;
   padding-left: 30px;
-  flex-wrap: wrap; /* чтобы адаптировать под маленькие экраны */
+  flex-wrap: wrap;
 }
 
 .solana-icon {
@@ -642,7 +642,7 @@ section:nth-child(4) {
 }
 
 .address.copied {
-  color: #de4adc; /* flash при копировании */
+  color: #de4adc;
   transform: scale(1.05);
 }
 
@@ -652,8 +652,8 @@ section:nth-child(4) {
   font-size: 0.75rem;
   font-weight: 900;
   border: none;
-  border-radius: 9999px; /* полностью округлая кнопка */
-  padding: 8px 20px; /* увеличенная зона клика */
+  border-radius: 9999px;
+  padding: 8px 20px;
   cursor: pointer;
   transition: background 0.2s ease, transform 0.1s ease;
   flex-shrink: 0;
