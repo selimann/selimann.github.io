@@ -622,7 +622,8 @@ section:nth-child(4) {
 }
 
 .label {
-  font-family: "System85MonoBoldPro";
+  font-family: "NeueMachina";
+  src: url("fonts/NeueMachina-Light.otf") format("opentype");
   font-weight: 900;
   line-height: 1.2;
   color: black;
@@ -633,6 +634,7 @@ section:nth-child(4) {
   display: inline-block;
   word-break: break-all;
   font-family: "System85MonoBoldPro";
+  src: url("fonts/system85-mono-bold-pro.ttf") format("opentype");
   font-weight: 1000;
   line-height: 1.2;
   cursor: pointer;
