@@ -633,8 +633,8 @@ section:nth-child(4) {
   color: rgb(109, 108, 108);
   display: inline-block;
   word-break: break-all;
-  font-family: "System85MonoBoldPro";
-  src: url("fonts/system85-mono-bold-pro.ttf") format("opentype");
+  font-family: "NeueMachina";
+  src: url("fonts/NeueMachina-Light.otf") format("opentype");
   font-weight: 1000;
   line-height: 1.2;
   cursor: pointer;
