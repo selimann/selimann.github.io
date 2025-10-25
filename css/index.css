@@ -267,7 +267,7 @@
 
   --text: #111;
   /* --bg: #fafbff; */
-  --bg:  #f8f8f2;
+  --bg: #f8f8f2;
   --accent: #d900ff;
   --accent-dark: #9c00cc;
   --border: 2px solid #000;
@@ -319,15 +319,12 @@ h2 {
 }
 
 .tech {
-  /* background: #d9bced; */
   background: #d900ff;
   color: white;
   font-weight: 1000;
   padding: 0.7px 4px;
   border-radius: 6px;
-  /* font-family: var(--font-mono); */
-  /* font-family: "System85MonoBoldPro";
-  src: url("../fonts/system85-mono-bold-pro.otf") format("opentype"); */
+  border: 1px solid black;
   font-family: "NeueMachina";
   src: url("../fonts/NeueMachina-Light.otf") format("opentype");
 
