@@ -233,28 +233,28 @@
 /* === CUSTOM FONTS === */
 @font-face {
   font-family: "NeueMachina";
-  src: url("fonts/NeueMachina-Light.otf") format("opentype");
+  src: url("../fonts/NeueMachina-Light.otf") format("opentype");
   font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
   font-family: "NeueMachina";
-  src: url("fonts/NeueMachina-Regular.otf") format("opentype");
+  src: url("../fonts/NeueMachina-Regular.otf") format("opentype");
   font-weight: 500;
   font-style: normal;
 }
 
 @font-face {
   font-family: "NeueMachina";
-  src: url("fonts/NeueMachina-Ultrabold.otf") format("opentype");
+  src: url("../fonts/NeueMachina-Ultrabold.otf") format("opentype");
   font-weight: 800;
   font-style: normal;
 }
 
 @font-face {
   font-family: "System85MonoBoldPro";
-  src: url("fonts/system85-mono-bold-pro.otf") format("opentype");
+  src: url("../fonts/system85-mono-bold-pro.otf") format("opentype");
   font-weight: 700;
   font-style: normal;
 }
@@ -262,10 +262,12 @@
 :root {
   --font-logo: "NeueMachina", sans-serif;
   --font-sans: "System85MonoBoldPro", monospace;
-  --font-mono: "IBM Plex Mono", monospace;
+  /* --font-mono: "IBM Plex Mono", monospace; */
+  --font-mono: "System85MonoBoldPro", monospace;
 
   --text: #111;
-  --bg: #fafbff;
+  /* --bg: #fafbff; */
+  --bg:  #f8f8f2;
   --accent: #d900ff;
   --accent-dark: #9c00cc;
   --border: 2px solid #000;
@@ -317,13 +319,41 @@ h2 {
 }
 
 .tech {
-  background: #d9bced;
-  color: #1a1a1a;
-  padding: 2px 6px;
+  /* background: #d9bced; */
+  background: #d900ff;
+  color: white;
+  font-weight: 1000;
+  padding: 0.7px 4px;
   border-radius: 6px;
+  /* font-family: var(--font-mono); */
+  /* font-family: "System85MonoBoldPro";
+  src: url("../fonts/system85-mono-bold-pro.otf") format("opentype"); */
+  font-family: "NeueMachina";
+  src: url("../fonts/NeueMachina-Light.otf") format("opentype");
+
+  font-weight: 600;
+  margin-bottom: 6px;
+  display: inline-block;
+}
+/* .tech {
+  background: #d900ff;
+  color: #fff;
+  padding: 3px 12px;
+  border-radius: 10px;
   font-family: var(--font-mono);
   font-weight: 600;
+  font-size: 0.85rem;
+  letter-spacing: 0.3px;
+  margin: 2px 2px 4px 0;
+  display: inline-block;
+  box-shadow: 0 0 12px rgba(217, 0, 255, 0.5);
+  transition: all 0.25s ease;
 }
+
+.tech:hover {
+  transform: translateY(-2px) scale(1.05);
+  box-shadow: 0 0 20px rgba(217, 0, 255, 0.8);
+} */
 
 .container {
   max-width: 1200px;
@@ -573,6 +603,10 @@ section:nth-child(4) {
   line-height: 1.2;
 }
 @media (max-width: 768px) {
+  .tech {
+    margin: 3px 0; /* Отступы справа и снизу */
+    display: inline-block; /* Чтобы margin работал правильно */
+  }
   section {
     padding: 40px 24px;
   }
@@ -610,7 +644,7 @@ section:nth-child(4) {
   align-items: center;
   gap: 12px;
   font-family: "System85MonoBoldPro";
-  src: url("fonts/system85-mono-bold-pro.otf") format("opentype");
+  src: url("../fonts/system85-mono-bold-pro.otf") format("opentype");
   font-size: 0.85rem;
   color: black;
   padding-top: 90px;
@@ -627,7 +661,7 @@ section:nth-child(4) {
 
 .label {
   font-family: "NeueMachina";
-  src: url("fonts/NeueMachina-Light.otf") format("opentype");
+  src: url("../fonts/NeueMachina-Light.otf") format("opentype");
   font-weight: 900;
   line-height: 1.2;
   color: black;
@@ -638,7 +672,7 @@ section:nth-child(4) {
   display: inline-block;
   word-break: break-all;
   font-family: "NeueMachina";
-  src: url("fonts/NeueMachina-Light.otf") format("opentype");
+  src: url("../fonts/NeueMachina-Light.otf") format("opentype");
   font-weight: 1000;
   line-height: 1.2;
   cursor: pointer;
@@ -668,7 +702,7 @@ section:nth-child(4) {
   flex-shrink: 0;
   margin-left: 22px;
   font-family: "NeueMachina";
-  src: url("fonts/NeueMachina-Light.otf") format("opentype");
+  src: url("../fonts/NeueMachina-Light.otf") format("opentype");
 }
 
 .copy-btn:hover {

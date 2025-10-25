@@ -1,0 +1,40 @@
+{
+  "projects": [
+    {
+      "id": "solana-sdk",
+      "title": "Solana SDK",
+      "description": "A lightweight TypeScript SDK for Solana—simplifying wallet connections, transaction signing, and SPL token interactions.",
+      "link": "https://www.npmjs.com/package/@elisedd/solana-sdk",
+      "tags": ["TypeScript", "Solana", "Blockchain"],
+      "type": "external",
+      "content": [
+        {
+          "type": "text-only",
+          "text": [
+            "A lightweight TypeScript SDK designed to simplify Solana blockchain interactions.",
+            "Features include: wallet connection management, transaction signing, SPL token operations, and reduced boilerplate code for DApp development.",
+            "Published on npm and actively maintained with focus on developer experience and reliability."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "solana-dapp",
+      "title": "Solana DApp",
+      "description": "A TypeScript web app that demonstrates how to interact with the Solana blockchain directly from the browser.",
+      "link": "https://github.com/selimann/solanawallet",
+      "tags": ["Solana", "TypeScript", "UI"],
+      "type": "external",
+      "content": [
+        {
+          "type": "text-only",
+          "text": [
+            "A demonstration TypeScript web application showcasing direct Solana blockchain interactions in the browser.",
+            "Implements wallet integration, token transfers, and transaction history display.",
+            "Serves as both a functional DApp and educational resource for Solana development."
+          ]
+        }
+      ]
+    }
+  ]
+}
