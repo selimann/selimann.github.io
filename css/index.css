@@ -526,7 +526,8 @@ section:nth-child(4) {
   font-family: var(--font-sans);
 }
 .view-btn:hover {
-  background: #000;
+  /* background: #000; */
+  background: #b27aff;
   color: #fff;
   transform: translateY(-2px);
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
@@ -569,10 +570,13 @@ section:nth-child(4) {
   min-width: 150px;
   font-size: 1.05rem;
   font-family: var(--font-sans);
+  font-weight: 1000;
+  font: bold;
 }
 
 .contact-links a:hover {
-  background: black;
+  /* background: black; */
+  background: #b27aff;
   color: white;
   transform: translateY(-3px);
 }
@@ -601,8 +605,8 @@ section:nth-child(4) {
 }
 @media (max-width: 768px) {
   .tech {
-    margin: 3px 0; /* Отступы справа и снизу */
-    display: inline-block; /* Чтобы margin работал правильно */
+    margin: 3px 0;
+    display: inline-block;
   }
   section {
     padding: 40px 24px;
