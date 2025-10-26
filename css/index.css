@@ -201,6 +201,8 @@ h2 {
 }
 
 .navbar {
+  font-size: 20px;
+
   margin: 40px auto;
   background: white;
   border: var(--border);
@@ -368,9 +370,9 @@ section:nth-child(4) {
 }
 
 .contact-links a {
-  display: flex; 
-  align-items: center; 
-  gap: 8px; 
+  display: flex;
+  align-items: center;
+  gap: 8px;
   text-decoration: none;
   color: var(--text);
   background: white;
@@ -396,7 +398,7 @@ section:nth-child(4) {
 .telegram-link-icon {
   width: 2rem;
   height: 2rem;
-  margin-left: 10px;
+  margin-left: 1.5px;
 }
 
 .contact-links a:hover {
@@ -443,8 +445,8 @@ section:nth-child(4) {
 }
 
 .solana-icon {
-  width: 32px;
-  height: 32px;
+  width: 40px;
+  height: 40px;
   opacity: 0.8;
   flex-shrink: 0;
 }
@@ -499,8 +501,33 @@ section:nth-child(4) {
   background-color: #111;
   transform: scale(1.05);
 }
+@media (max-width: 480px) {
+  .contact-links a.telegram-link {
+    padding-left: 24px; /* увеличиваем отступ слева */
+  }
+  .contact-links a {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 9px;
+    margin: 0.1px 0;
+    min-width: 0;
+    width: auto;
+    min-width: 177px;
+    max-height: 60px;
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+  .solana-address {
+    flex-direction: column;
+    align-items: center;
+    padding-left: 0;
+    padding-top: 40px;
+    gap: 12px;
+  }
+}
 
-
+/* 
 @media (max-width: 480px) {
   .solana-address {
     flex-direction: column;
@@ -517,39 +544,56 @@ section:nth-child(4) {
   }
 
   .link-icon {
-    width: 1.5rem;
-    height: 1.5rem;
+    width: 2.5rem;
+    height: 2.5rem;
   }
 
   .x-link-icon {
+    padding-left: 1;
     width: 1.5rem;
     height: 1.5rem;
-    margin-left: 0; 
-    
+    margin-left: 1;
   }
 
   .telegram-link-icon {
     width: 1.5rem;
     height: 1.5rem;
-    margin-left: 0; 
-    max-width: none; 
+    margin-left: 1;
+    max-width: none;
+  }
+  .contact-links {
+    flex-direction: column; 
+    gap: 13px; 
   }
 
   .contact-links a {
-    
-    
-    margin: 5px 0; 
-    
-
+    margin: 0.1px 0;
     min-width: 0;
+    max-height: 60px;
     width: 100%;
     max-width: 320px;
     align-items: center;
-    justify-content: flex-start; 
+    justify-content: flex-start;
     display: flex;
-    gap: 8px; 
+    gap: 9px;
   }
-}
+} */
+
+/* @media (max-width: 480px) {
+  .contact-links a {
+    height: 50px; 
+    display: flex;
+    align-items: center; 
+    justify-content: flex-start;
+    gap: 13px; 
+    margin: 0;
+    min-width: 0;
+    width: 100%;
+    max-width: 320px;
+    padding: 4px 12px; 
+  }
+} */
+
 @media (max-width: 768px) {
   .tech {
     margin: 3px 0;
