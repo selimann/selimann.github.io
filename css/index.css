@@ -623,6 +623,11 @@ section:nth-child(4) {
   .menu ul {
     gap: 8px;
   }
+  .copy-btn {
+    width: auto;
+    text-align: center;
+    margin-left: 0;
+  }
 
   .menu a {
     padding: 6px 10px;
@@ -642,7 +647,7 @@ section:nth-child(4) {
   }
 
   .project-card {
-    width: calc(100% - 8px); 
+    width: calc(100% - 8px);
     max-width: 320px;
     margin: 0 auto;
   }
