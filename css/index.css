@@ -501,6 +501,7 @@ section:nth-child(4) {
   background-color: #111;
   transform: scale(1.05);
 }
+
 @media (max-width: 480px) {
   .contact-links a.telegram-link {
     padding-left: 24px; /* увеличиваем отступ слева */
@@ -630,3 +631,19 @@ section:nth-child(4) {
 }
 
 /** **/
+@media (max-width: 430px) {
+  .projects-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    width: 100%;
+    padding: 0;
+  }
+
+  .project-card {
+    width: calc(100% - 8px); 
+    max-width: 320px;
+    margin: 0 auto;
+  }
+}
