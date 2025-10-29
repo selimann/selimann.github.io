@@ -35,6 +35,32 @@
           ]
         }
       ]
+    },
+    {
+      "id": "x402-payment-gateway",
+      "title": "x402 Payment Gateway",
+      "description": "A secure Node.js server implementing the x402 protocol for USDC micropayments on Base Sepolia, with automated testnet token distribution.",
+      "link": "https://github.com/selimann/x402",
+      "tags": [
+        "Node.js",
+        "TypeScript",
+        "x402",
+        "USDC",
+        "Base Sepolia",
+        "Blockchain"
+      ],
+      "type": "external",
+      "content": [
+        {
+          "type": "text-only",
+          "text": [
+            "A production-ready payment gateway that implements the x402 (HTTP 402 Payment Required) protocol using USDC on Base Sepolia testnet.",
+            "Features a robust Express middleware that verifies on-chain USDC transfers in real time, protects premium API routes, and returns detailed payment proofs.",
+            "Includes a standalone airdrop automation script that claims 0.01 USDC test tokens from Circle's faucet with retry logic, error handling, and balance verification.",
+            "Built with TypeScript, ethers.js, and native Node.js fetch — zero external HTTP dependencies, full type safety, and modular design."
+          ]
+        }
+      ]
     }
   ]
 }
